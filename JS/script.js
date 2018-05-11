@@ -1,6 +1,6 @@
 lightbox.option({      
 	'wrapAround': true,
-	'imageFadeDuration': 2,
+	'imageFadeDuration': 200,
 	'alwaysShowNavOnTouchDevices': true,
   });
 
