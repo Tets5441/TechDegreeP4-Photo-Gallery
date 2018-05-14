@@ -6,34 +6,17 @@ lightbox.option({
 
 //search field 
 
+
 $("#search").keyup(function() {
-	const $search = $("#search").val().toUpperCase();
-   const $title = $(".photos");
-	 for (let i = 0; i < $title.length; i++){
-		 if ($title[i].getAttribute("data-title").toUpperCase().includes($search)) {		  		
-			 $($title[i]).parent().css("display", "inline-block")
-			 console.log($title[i]);
+    const $search = $("#search").val().toUpperCase();
+    const $photos = $(".photos");
+	 for (i = 0; i < $photos.length; i++) {
+		 if ($photos[i].getAttribute("data-title").toUpperCase().includes($search)) {		  		
+			 $($photos[i]).parent().css("display", "inline-block")
 		 } 	else { 
-			 $($title[i]).parent().hide();
+			 $($photos[i]).parent().hide();
 		 }  
 	 }
 });
 
-//commit to git hub
-
-/* original code
-var search = $("#search")
-var res = search.toLowerCase();
-var $title = $(".photos");
-
-$("#search").addEventListener("keyup", function() {
-	 for (let i = 0; i < title.length; i+=){
-		 if (title[i].getAttr("data-title").toLowerCase().includes('search')) {		  		
-			 title.show
-		 } 	else { 
-			 title.hide
-		 }  
-	 }
-});
-*/
 
