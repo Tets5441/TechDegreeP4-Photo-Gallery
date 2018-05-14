@@ -6,7 +6,6 @@ lightbox.option({
 
 //search field 
 
-
 $("#search").keyup(function() {
     const $search = $("#search").val().toUpperCase();
     const $photos = $(".photos");
